@@ -21,7 +21,7 @@ const config: Config = {
   baseUrl: '/',
 
   customFields: {
-    backendUrl: 'http://localhost:8000', // Default for local development
+    backendUrl: ' https://neat-erika-stbook-c5db9d12.koyeb.app' local development
   },
 
   // GitHub pages deployment config.
