@@ -1,0 +1,241 @@
+/* Modern Chatbot UI - Fresh Design */
+.chatToggleButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(110, 142, 251, 0.4);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: pulse 2s infinite;
+}
+
+.chatToggleButton:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 8px 25px rgba(110, 142, 251, 0.6);
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(110, 142, 251, 0.6); }
+    70% { box-shadow: 0 0 0 15px rgba(110, 142, 251, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(110, 142, 251, 0); }
+}
+
+.chatWindow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 600px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow: hidden;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    border: 1px solid #eaeaea;
+}
+
+.chatHeader {
+    background: linear-gradient(90deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.closeButton {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+}
+.closeButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatBody {
+    flex-grow: 1;
+    padding: 25px 15px 15px;
+    overflow-y: auto;
+    background: #fafbff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.welcomeMessage {
+    text-align: center;
+    color: #6b7280;
+    margin: auto;
+    font-style: normal;
+    font-size: 15px;
+    padding: 20px;
+    background: rgba(110, 142, 251, 0.05);
+    border-radius: 12px;
+    border: 1px dashed #e0e7ff;
+}
+
+.message {
+    padding: 15px 20px;
+    border-radius: 18px;
+    max-width: 80%;
+    line-height: 1.5;
+    word-wrap: break-word;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.user {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #6e8efb, #846bf7);
+    color: white;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 5px;
+}
+
+.bot {
+    align-self: flex-start;
+    background: #f0f4ff;
+    color: #374151;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 5px;
+    border: 1px solid #e0e7ff;
+}
+
+.chatInputForm {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eaeaea;
+    padding: 15px;
+    background: white;
+    gap: 12px;
+}
+
+.chatInputForm input {
+    flex-grow: 1;
+    border: 2px solid #eaeaea;
+    border-radius: 24px;
+    padding: 14px 20px;
+    margin-right: 5px;
+    font-size: 15px;
+    background-color: #fafcff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    color: green;
+}
+
+
+.chatInputForm input:focus {
+    outline: none;
+    border-color: #a777e3;
+    box-shadow: 0 0 0 3px rgba(167, 119, 227, 0.1);
+    background-color: white;
+}
+
+.chatInputForm button {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(110, 142, 251, 0.3);
+}
+
+.chatInputForm button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(110, 142, 251, 0.4);
+}
+
+.chatInputForm button:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Modern Loading Dots (three bouncing balls) */
+.loadingDots {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 10px 0;
+}
+.loadingDots span {
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border-radius: 50%;
+    animation: bounce 1.4s infinite both;
+}
+.loadingDots span:nth-child(2) {
+    animation-delay: -0.32s;
+}
+.loadingDots span:nth-child(3) {
+    animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0.6);
+  }
+  40% {
+    transform: scale(1.0);
+  }
+}
+
+/* Additional styling for better UI */
+.message p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.message a {
+    color: #ffffff;
+}
+
+.bot a {
+    color: #6e8efb;
+}
