@@ -21,7 +21,7 @@ const config: Config = {
   baseUrl: '/',
 
   customFields: {
-    backendUrl: 'https://neat-erika-stbook-c5db9d12.koyeb.app' local development
+    backendUrl: 'https://ai-robotics-production.up.railway.app/chat' 
   },
 
   // GitHub pages deployment config.
