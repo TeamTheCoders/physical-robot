@@ -1,1 +1,8 @@
-
+fastapi
+uvicorn
+pydantic
+qdrant-client
+langchain-google-genai
+python-dotenv
+langchain-core
+google-generativeai
