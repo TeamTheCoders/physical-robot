@@ -5,8 +5,7 @@ qdrant-client
 langchain-google-genai
 python-dotenv
 langchain-core
-<<<<<<< HEAD
 google-generativeai
-=======
-google-generativeai
->>>>>>> 69f5e7576dbe4ba30d4eefb73bd3a19550dd8f26
+
+
+
