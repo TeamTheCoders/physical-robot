@@ -9,10 +9,10 @@ const ChatWidget = () => {
     const [isLoading, setIsLoading] = useState(false);
     const chatWindowRef = useRef(null);
 
-    const {
-        siteConfig: { customFields },
-    } = useDocusaurusContext();
-    const backendUrl = customFields.backendUrl;
+    // const {
+    //     siteConfig: { customFields },
+    // } = useDocusaurusContext();
+    const backendUrl = "https://neat-erika-stbook-c5db9d12.koyeb.app";
 
     const toggleChat = () => {
         setIsOpen(!isOpen);
