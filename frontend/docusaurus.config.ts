@@ -22,7 +22,7 @@ const config: Config = {
 
   customFields: {
     backendUrl: 'https://neat-erika-stbook-c5db9d12.koyeb.app' local development
-  }
+  },
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
