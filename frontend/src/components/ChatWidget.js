@@ -28,7 +28,7 @@ const ChatWidget = () => {
         setIsLoading(true);
 
         try {
-            const response = await fetch('https://neat-erika-stbook-c5db9d12.koyeb.app/chat', {
+            const response = await fetch(`${backendUrl}/chat`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
