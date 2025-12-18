@@ -12,7 +12,7 @@ const ChatWidget = () => {
     // const {
     //     siteConfig: { customFields },
     // } = useDocusaurusContext();
-    const backendUrl = "https://ai-robotics-production.up.railway.app/chat";
+    const backendUrl = "https://ai-robotics-production.up.railway.app";
 
     const toggleChat = () => {
         setIsOpen(!isOpen);
