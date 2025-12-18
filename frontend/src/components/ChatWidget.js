@@ -12,7 +12,7 @@ const ChatWidget = () => {
     // const {
     //     siteConfig: { customFields },
     // } = useDocusaurusContext();
-    const backendUrl = "https://neat-erika-stbook-c5db9d12.koyeb.app";
+    const backendUrl = "https://ai-robotics-production.up.railway.app/chat";
 
     const toggleChat = () => {
         setIsOpen(!isOpen);
