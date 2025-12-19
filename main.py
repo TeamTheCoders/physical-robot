@@ -42,6 +42,9 @@ qdrant_client = QdrantClient(
     api_key=QDRANT_API_KEY,
 )
 
+print(f"Qdrant Client Type: {type(qdrant_client)}")
+print(f"Qdrant Client Attributes: {dir(qdrant_client)}")
+
 # Initialize Embedding Model
 embeddings_model = GoogleGenerativeAIEmbeddings(
     model=EMBEDDING_MODEL,
