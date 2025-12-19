@@ -1,7 +1,7 @@
 fastapi
 uvicorn
 pydantic
-qdrant-client>=1.7.0 
+qdrant-client>=1.7.3
 langchain-google-genai
 python-dotenv
 langchain-core
